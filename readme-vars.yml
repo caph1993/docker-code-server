@@ -37,6 +37,7 @@ opt_param_env_vars:
   - {env_var: "PROXY_DOMAIN", env_value: "code-server.my.domain", desc: "If this optional variable is set, this domain will be proxied for subdomain proxying. See [Documentation](https://github.com/coder/code-server/blob/main/docs/guide.md#using-a-subdomain)"}
   - {env_var: "DEFAULT_WORKSPACE", env_value: "/config/workspace", desc: "If this optional variable is set, code-server will open this directory by default"}
   - {env_var: "PWA_APPNAME", env_value: "code-server", desc: "If this optional variable is set, the PWA app will the specified name."}
+  - {env_var: "ABS_PROXY_BASE_PATH", env_value: "", desc: "If this optional variable is set, code-server will be served from a path other than the root in your domain. See [Documentation](https://github.com/coder/code-server/blob/main/docs/guide.md#prefixing-absproxyport-with-a-path)"}
 readonly_supported: true
 readonly_message: |
   * `/tmp` must be mounted to tmpfs
