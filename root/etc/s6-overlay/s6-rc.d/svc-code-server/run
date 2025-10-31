@@ -48,5 +48,6 @@ else
                 --auth "${AUTH}" \
                 --app-name "${PWA_APPNAME}" \
                 "${PROXY_DOMAIN_ARG}" \
+                "${ABS_PROXY_BASE_PATH}" \
                 "${DEFAULT_WORKSPACE:-/config/workspace}"
 fi
